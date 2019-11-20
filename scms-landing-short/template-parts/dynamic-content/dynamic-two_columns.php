@@ -1,13 +1,13 @@
 <div class="container">
 <?php $ratio = get_sub_field('column_ratio');
 if($ratio == '7:5'){
-	$col1 = 'col-md-7 col-xl-6 col-xl-offset-1';
+	$col1 = 'col-md-7 col-xl-6 offset-xl-1';
 	$col2 = 'col-md-5';
 } elseif($ratio == '5:7'){
-	$col1 = 'col-md-5 col-xl-4 col-xl-offset-1';
+	$col1 = 'col-md-5 col-xl-4 offset-xl-1';
 	$col2 = 'col-md-7';
 } else {
-	$col1 = 'col-md-6  col-xl-5 col-xl-offset-1';
+	$col1 = 'col-md-6  col-xl-5 offset-xl-1';
 	$col2 = 'col-md-6';
 }
 if(get_sub_field('custom_id')){

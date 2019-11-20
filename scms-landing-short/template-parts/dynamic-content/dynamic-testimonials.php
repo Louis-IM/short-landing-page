@@ -4,7 +4,7 @@ if(get_sub_field('image')){ $image = get_sub_field('image');}?>
 	<div class="container">
 	<?php if(get_sub_field('top_text')):?>
 	<div class="row">
-		<div class="col-sm-12 col-lg-10 col-lg-offset-1">
+		<div class="col-sm-12 col-xl-10 offset-xl-1">
 			<?php the_sub_field('top_text');?>
 		</div>
 	</div>

@@ -6,7 +6,7 @@ if(get_sub_field('image')){ $image = get_sub_field('image');}?>
 <?php endif;?>
 	<div class="container">
 		<div class="row">
-			<div class="<?php echo (get_sub_field('wide')) ? "col-sm-12" : "col-sm-12 col-lg-10 col-lg-offset-1" ;  ?>">
+			<div class="<?php echo (get_sub_field('wide')) ? "col" : "col col-xl-10 offset-xl-1" ;  ?>">
 			<?php the_sub_field('text');?>
 			<?php if(get_sub_field('read_more_link')):
 			$link = get_sub_field('read_more_link');?>

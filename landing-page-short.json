@@ -1640,13 +1640,6 @@
                     "value": "landing-page.php"
                 }
             ],
-            [
-                {
-                    "param": "options_page",
-                    "operator": "==",
-                    "value": "general-settings"
-                }
-            ]
         ],
         "menu_order": 0,
         "position": "acf_after_title",

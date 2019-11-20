@@ -32,7 +32,7 @@ img {
 }
 
 h1, h2, h3 {
-    color: #369828;
+    color: #d86018;
 	font-family: 'Trirong', serif;
 }
 
@@ -52,10 +52,12 @@ h2 {
 h3 {
     font-size: 20px;
 }
-
+a {
+	color:#d86018
+}
 h4 {
     font-size: 14px;
-    color: #369828;
+    color: #d86018;
     margin: 2.3em 0;
     letter-spacing: 0.1em;
 }
@@ -99,7 +101,9 @@ table td {
 table td:last-child {
     text-align: right;
 }
-
+.bodyContent {
+	margin:20px 0;
+}
 /* form changes*/
 .dynamicContent div.wpforms-container-full .wpforms-form .wpforms-field-label {
     font-weight: 300;
@@ -116,18 +120,18 @@ table td:last-child {
     padding: 12px 41px;
     font-size: 16px;
     text-transform: uppercase;
-    background: #16A5E4;
+    background: #000;
     color: #fff;
     letter-spacing: 0.1em;
-    border: solid 2px #16A5E4;
+    border: solid 2px #000;
     min-width: 200px;
     text-align: center;
 }
 
 .dynamicContent div.wpforms-container-full .wpforms-form button[type=submit]:hover {
     background: #fff;
-	color:#16A5E4;
-    border: solid 2px #16A5E4;
+	color:#000;
+    border: solid 2px #000;
 }
 
 /*------------------------------------*\
@@ -217,12 +221,6 @@ a img.aligncenter {
 /*------------------------------------*\
     RESPONSIVE XL
 \*------------------------------------*/
-.col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
 .container.body-container {
     max-width: 1300px;
@@ -230,254 +228,15 @@ a img.aligncenter {
 
 @media only screen and (min-width : 1390px) {
     .container {
-        width: 1300px;
+        max-width: 1300px;
     }
 }
 
 @media (min-width: 1590px) {
     .container {
-        width: 1560px;
+       max-width: 1560px;
     }
 
-    .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-        float: left;
-    }
-
-    .col-xl-12 {
-        width: 100%;
-    }
-
-    .col-xl-11 {
-        width: 91.66666667%;
-    }
-
-    .col-xl-10 {
-        width: 83.33333333%;
-    }
-
-    .col-xl-9 {
-        width: 75%;
-    }
-
-    .col-xl-8 {
-        width: 66.66666667%;
-    }
-
-    .col-xl-7 {
-        width: 58.33333333%;
-    }
-
-    .col-xl-6 {
-        width: 50%;
-    }
-
-    .col-xl-5 {
-        width: 41.66666667%;
-    }
-
-    .col-xl-4 {
-        width: 33.33333333%;
-    }
-
-    .col-xl-3 {
-        width: 25%;
-    }
-
-    .col-xl-2 {
-        width: 16.66666667%;
-    }
-
-    .col-xl-1 {
-        width: 8.33333333%;
-    }
-
-    .col-xl-pull-12 {
-        right: 100%;
-    }
-
-    .col-xl-pull-11 {
-        right: 91.66666667%;
-    }
-
-    .col-xl-pull-10 {
-        right: 83.33333333%;
-    }
-
-    .col-xl-pull-9 {
-        right: 75%;
-    }
-
-    .col-xl-pull-8 {
-        right: 66.66666667%;
-    }
-
-    .col-xl-pull-7 {
-        right: 58.33333333%;
-    }
-
-    .col-xl-pull-6 {
-        right: 50%;
-    }
-
-    .col-xl-pull-5 {
-        right: 41.66666667%;
-    }
-
-    .col-xl-pull-4 {
-        right: 33.33333333%;
-    }
-
-    .col-xl-pull-3 {
-        right: 25%;
-    }
-
-    .col-xl-pull-2 {
-        right: 16.66666667%;
-    }
-
-    .col-xl-pull-1 {
-        right: 8.33333333%;
-    }
-
-    .col-xl-pull-0 {
-        right: auto;
-    }
-
-    .col-xl-push-12 {
-        left: 100%;
-    }
-
-    .col-xl-push-11 {
-        left: 91.66666667%;
-    }
-
-    .col-xl-push-10 {
-        left: 83.33333333%;
-    }
-
-    .col-xl-push-9 {
-        left: 75%;
-    }
-
-    .col-xl-push-8 {
-        left: 66.66666667%;
-    }
-
-    .col-xl-push-7 {
-        left: 58.33333333%;
-    }
-
-    .col-xl-push-6 {
-        left: 50%;
-    }
-
-    .col-xl-push-5 {
-        left: 41.66666667%;
-    }
-
-    .col-xl-push-4 {
-        left: 33.33333333%;
-    }
-
-    .col-xl-push-3 {
-        left: 25%;
-    }
-
-    .col-xl-push-2 {
-        left: 16.66666667%;
-    }
-
-    .col-xl-push-1 {
-        left: 8.33333333%;
-    }
-
-    .col-xl-push-0 {
-        left: auto;
-    }
-
-    .col-xl-offset-12 {
-        margin-left: 100%;
-    }
-
-    .col-xl-offset-11 {
-        margin-left: 91.66666667%;
-    }
-
-    .col-xl-offset-10 {
-        margin-left: 83.33333333%;
-    }
-
-    .col-xl-offset-9 {
-        margin-left: 75%;
-    }
-
-    .col-xl-offset-8 {
-        margin-left: 66.66666667%;
-    }
-
-    .col-xl-offset-7 {
-        margin-left: 58.33333333%;
-    }
-
-    .col-xl-offset-6 {
-        margin-left: 50%;
-    }
-
-    .col-xl-offset-5 {
-        margin-left: 41.66666667%;
-    }
-
-    .col-xl-offset-4 {
-        margin-left: 33.33333333%;
-    }
-
-    .col-xl-offset-3 {
-        margin-left: 25%;
-    }
-
-    .col-xl-offset-2 {
-        margin-left: 16.66666667%;
-    }
-
-    .col-xl-offset-1 {
-        margin-left: 8.33333333%;
-    }
-
-    .col-xl-offset-0 {
-        margin-left: 0;
-    }
-
-    .visible-xl {
-        display: block !important;
-    }
-
-    table.visible-xl {
-        display: table;
-    }
-
-    tr.visible-xl {
-        display: table-row !important;
-    }
-
-    th.visible-xl, td.visible-xl {
-        display: table-cell !important;
-    }
-
-    .visible-xl-block {
-        display: block !important;
-    }
-
-    .visible-xl-inline {
-        display: inline !important;
-    }
-
-    .visible-xl-inline-block {
-        display: inline-block !important;
-    }
-
-    .hidden-xl {
-        display: none !important;
-    }
 }
 
 /* End responsive XL */
@@ -505,12 +264,12 @@ a img.aligncenter {
 }
 
 .mainMenu .menu a {
-    color: #369828;
+    color: #d86018;
 }
 
 .mainMenu .menu a:hover {
     text-decoration: none;
-    color: #16A5E4;
+    color: #000;
 }
 
 .mainMenu .menu li {
@@ -600,10 +359,10 @@ a img.aligncenter {
     padding: 10px 20px;
     font-size: 16px;
     text-transform: uppercase;
-    background: #369828;
+    background: #d86018;
     color: #fff;
     letter-spacing: 0.1em;
-    border: solid 2px #369828;
+    border: solid 2px #d86018;
     text-align: center;
     width: 100%;
 }
@@ -611,7 +370,7 @@ a img.aligncenter {
 .headGroup .openDays a:hover,
 .menuopenDays a:hover {
     background: #fff;
-	color:#369828;
+	color:#d86018;
     text-decoration: none;
 }
 
@@ -648,7 +407,7 @@ a img.aligncenter {
     .menuToggle {
         display: inline-block;
         font-size: 30px;
-        color: #369828;
+        color: #d86018;
         padding: 15px 20px 10px;
         text-align: right;
         cursor: pointer;
@@ -665,7 +424,7 @@ a img.aligncenter {
         z-index: 800;
         padding: 32px 0;
         text-align: left;
-        border-left: solid 2px #16A5E4;
+        border-left: solid 2px #000;
     }
 
     .mainMenu .menuWrap {
@@ -688,7 +447,7 @@ a img.aligncenter {
     }
 
     .mainMenu .menu li a:hover {
-        background: #16A5E4;
+        background: #000;
         color: #fff;
         text-decoration: none;
     }
@@ -741,7 +500,7 @@ Header
     position: relative;
     overflow: hidden;
     max-height: 585px;
-    background: #369828;
+    background: #d86018;
 }
 
 .homeBanner .slide {
@@ -764,7 +523,7 @@ Header
     text-align: center;
     font-size: 18px;
     font-weight: 500;
-    background: #369828;
+    background: #d86018;
     padding: 10px;
 }
 
@@ -823,7 +582,7 @@ Header
 
 .homeBanner .openDays {
     color: #fff;
-    background: rgb(41, 123, 137);
+    background:#000;
     padding: 15px 0;
     text-align: center;
 	font-size:14px;
@@ -836,17 +595,17 @@ Header
     padding: 10px 41px;
     font-size: 1em;
     text-transform: uppercase;
-    background: #369828;
+    background: #d86018;
     color: #fff;
     letter-spacing: 0.1em;
-    border: solid 2px #369828;
+    border: solid 2px #d86018;
     min-width: 200px;
     text-align: center;
 }
 
 .homeBanner .openDays a:hover {
     background: #fff;
-	color:#369828;
+	color:#d86018;
     text-decoration: none;
 }
 
@@ -887,7 +646,7 @@ Header
 }
 
 .introText {
-    background: #95D601;
+    background: #000;
     color: #fff;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -954,10 +713,10 @@ Header
     padding: 10px 41px;
     font-size: 12px;
     text-transform: uppercase;
-    background: #369828;
+    background: #d86018;
     color: #fff;
     letter-spacing: 0.1em;
-    border: solid 2px #369828;
+    border: solid 2px #d86018;
     min-width: 200px;
     text-align: center;
     margin-top: 10px;
@@ -972,14 +731,14 @@ Header
 }
 .textBlock.style1  .textLink,
 .style1 .linkbutton a{
-	background:#16A5E4;
-	border: solid 2px #16A5E4;
+	background:#000;
+	border: solid 2px #000;
 }
 .textBlock.style1  .textLink:hover,
 .style1 .linkbutton a:hover{
 	background: #fff;
-    color: #369828;
-    border: solid 2px #16A5E4;
+    color: #d86018;
+    border: solid 2px #000;
 }
 .linkbutton.telephoneLink a {
 	padding:0;
@@ -1022,7 +781,7 @@ Header
     content: '';
     display: block;
     width: 1px;
-    background: #369828;
+    background: #d86018;
     height: 87px;
     margin: 15px auto 0px;
 }
@@ -1039,7 +798,7 @@ Header
 	background:#eee;
 }
 .textBlock.style1 {
-	background: #369828;
+	background: #d86018;
 	color:#fff;
 }
 .textBlock.style1 h2,
@@ -1048,7 +807,7 @@ Header
 	color:#fff;
 }
 .textBlock.style2 {
-	background: #16A5E4;
+	background: #000;
 	color:#fff;
 }
 .textBlock.style2 h2,
@@ -1088,10 +847,10 @@ Header
     background-position: center;
 }
 .ImgtextBlock .textBlock.style1 {
-	background:rgba(54, 152, 40, 0.8)
+	background:rgba(216, 96, 24, 0.8)
 }
 .ImgtextBlock .textBlock.style2 {
-	background:rgba(22, 165, 228, 0.80);
+	background:rgba(0, 0, 0, 0.80);
 }
 .ImgtextBlock .textBlock.lightgreyBlock{
 	background:rgba(238, 238, 238, 0.8);
@@ -1105,7 +864,7 @@ Header
 
 /*columns*/
 .dynamic-two_columns .columnrow .col2 {
-    background: #369828;
+    background: #d86018;
 	color:#fff;
     z-index: 2;
 	padding-bottom:5px;
@@ -1136,7 +895,7 @@ Header
         background: #fff;
         position: relative;
     }
-	.dynamic-two_columns .columnrow .col2 {
+	.dynamic-two_columns.intro-two .columnrow .col2 {
 		margin-top:-650px;
 		position:relative;
 		z-index:120;
@@ -1156,7 +915,7 @@ Header
     }
 }
 @media (min-width: 1200px) {
-	.dynamic-two_columns .columnrow .col2 {
+	.dynamic-two_columns.intro-two .columnrow .col2 {
 		margin-top:-650px;		
 	}
 
@@ -1170,7 +929,7 @@ Header
 	.dynamic-two_columns .columnrow .col2 .col-bottom-image{
 		margin:10px -40px -22px;
 	}
-.dynamic-two_columns .columnrow .col2 {
+.dynamic-two_columns.intro-two .columnrow .col2 {
 		margin-top:-650px;		
 }
 }
@@ -1411,7 +1170,7 @@ Header
 	position:absolute;
 	width:20px;
 	height:2px;
-	background:#369828;
+	background:#d86018;
 	top:0;
 	left:50%;
 	margin-left:-10px;
@@ -1511,10 +1270,10 @@ Footer
     padding: 10px 41px;
     font-size: 12px;
     text-transform: uppercase;
-    background: #369828;
+    background: #d86018;
     color: #fff;
     letter-spacing: 0.1em;
-    border: solid 2px #369828;
+    border: solid 2px #d86018;
     min-width: 200px;
     text-align: center;
     bottom: 135px;
@@ -1524,7 +1283,7 @@ Footer
 
 .footer .map a:hover {
     background: #fff;
-	color:#369828;
+	color:#d86018;
     text-decoration: none;
 }
 
@@ -1538,7 +1297,7 @@ Footer
 
 .footerTop a,
 .footerTop span {
-    color: #369828;
+    color: #d86018;
     font-weight:400;
 }
 
@@ -1555,7 +1314,7 @@ Footer
 
 .footerBottom a,
 .footerBottom span {
-    color: #369828;
+    color: #d86018;
     font-weight:400;
 }
 

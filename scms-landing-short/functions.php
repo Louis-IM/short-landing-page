@@ -84,7 +84,7 @@ function twentyseventeen_scripts() {
 	wp_enqueue_style( 'lato-font', 'https://fonts.google.com/specimen/Lato?selection.family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' );
 	wp_enqueue_style( 'Trirong-font', 'https://fonts.googleapis.com/css?family=Trirong:300,300i,400,500' );	
 	
-	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' , array(), '4.3.1' );
 	wp_enqueue_style( 'owl-style', get_template_directory_uri() . '/css/owl.carousel.min.css' );
 	wp_enqueue_style( 'fancybox-style', get_template_directory_uri() . '/css/jquery.fancybox.min.css' );
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css');

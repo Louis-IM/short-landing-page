@@ -8,11 +8,11 @@ $blockno = count(get_sub_field('info_blocks'));?>
 <?php endif;?>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-lg-8 col-lg-offset-2">
+			<div class="col-sm-12 col-xl-8 offset-xl-2">
 				<?php the_sub_field('top_text');?>
 			</div>
 		<div class="row">
-			<div class="col-sm-12 col-lg-8 col-lg-offset-2">
+			<div class="col-sm-12 col-xl-8 offset-xl-2">
 				<?php if(have_rows('info_blocks')):
 						if($blockno >= 5){
 							$cols = 'col-xs-4 col-sm-2';
@@ -58,7 +58,7 @@ $blockno = count(get_sub_field('info_blocks'));?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12 col-lg-8 col-lg-offset-2">
+			<div class="col-sm-12 col-xl-8 offset-xl-2">
 			<?php the_sub_field('bottom_text');?>
 			</div>
 		</div>
