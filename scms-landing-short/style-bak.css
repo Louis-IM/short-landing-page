@@ -1,0 +1,1241 @@
+/*
+	Theme Name: Schoolcms - Landing
+	Author: Innermedia
+Author URI: https://www.innermedia.co.uk
+Description: 
+Requires at least: WordPress 4.9.6
+Version: 1.0
+*/
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+body {
+    font-size: 18px;
+    font-family: museo-sans, sans-serif;
+    font-weight: 300;
+    color: #8d9091;
+    line-height: 1.55;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #041e42;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 14px;
+    color: #c5e86c;
+    text-transform: uppercase;
+    margin: 2.3em 0;
+    letter-spacing: 0.1em;
+}
+
+p {
+    margin-bottom: 1.2em;
+    letter-spacing: 0.01em;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.textBlock.default ul {
+    color: #237281;
+}
+
+blockquote {
+    font-family: 'Open Sans', sans-serif;
+    color: #2dccd3;
+    text-align: center;
+    border: 0;
+    font-style: italic;
+}
+
+table {
+    margin: 1em auto;
+    text-align: left;
+    max-width: 100%;
+}
+
+table tr {
+    border-bottom: solid 1px;
+}
+
+table td {
+    padding: 5px;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+/* form changes*/
+.dynamicContent div.wpforms-container-full .wpforms-form .wpforms-field-label {
+    font-weight: 300;
+}
+
+.dynamicContent div.wpforms-container-full .wpforms-form input.wpforms-field-medium, .dynamicContent div.wpforms-container-full .wpforms-form select.wpforms-field-medium, .dynamicContent div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+}
+
+.dynamicContent div.wpforms-container-full .wpforms-form button[type=submit] {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 12px 41px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #c5e86c;
+    color: #041e42;
+    letter-spacing: 0.1em;
+    border: solid 2px #c5e86c;
+    min-width: 200px;
+    text-align: center;
+}
+
+.dynamicContent div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+    background: #fff;
+    border: solid 2px #c5e86c;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #FFF;
+    border: 1px solid #F0F0F0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption .wp-caption-text, .gallery-caption {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.sticky {
+}
+
+.bypostauthor {
+}
+
+/*------------------------------------*\
+    RESPONSIVE XL
+\*------------------------------------*/
+.col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container.body-container {
+    max-width: 1300px;
+}
+
+@media only screen and (min-width : 1390px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+@media (min-width: 1590px) {
+    .container {
+        width: 1560px;
+    }
+
+    .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+        float: left;
+    }
+
+    .col-xl-12 {
+        width: 100%;
+    }
+
+    .col-xl-11 {
+        width: 91.66666667%;
+    }
+
+    .col-xl-10 {
+        width: 83.33333333%;
+    }
+
+    .col-xl-9 {
+        width: 75%;
+    }
+
+    .col-xl-8 {
+        width: 66.66666667%;
+    }
+
+    .col-xl-7 {
+        width: 58.33333333%;
+    }
+
+    .col-xl-6 {
+        width: 50%;
+    }
+
+    .col-xl-5 {
+        width: 41.66666667%;
+    }
+
+    .col-xl-4 {
+        width: 33.33333333%;
+    }
+
+    .col-xl-3 {
+        width: 25%;
+    }
+
+    .col-xl-2 {
+        width: 16.66666667%;
+    }
+
+    .col-xl-1 {
+        width: 8.33333333%;
+    }
+
+    .col-xl-pull-12 {
+        right: 100%;
+    }
+
+    .col-xl-pull-11 {
+        right: 91.66666667%;
+    }
+
+    .col-xl-pull-10 {
+        right: 83.33333333%;
+    }
+
+    .col-xl-pull-9 {
+        right: 75%;
+    }
+
+    .col-xl-pull-8 {
+        right: 66.66666667%;
+    }
+
+    .col-xl-pull-7 {
+        right: 58.33333333%;
+    }
+
+    .col-xl-pull-6 {
+        right: 50%;
+    }
+
+    .col-xl-pull-5 {
+        right: 41.66666667%;
+    }
+
+    .col-xl-pull-4 {
+        right: 33.33333333%;
+    }
+
+    .col-xl-pull-3 {
+        right: 25%;
+    }
+
+    .col-xl-pull-2 {
+        right: 16.66666667%;
+    }
+
+    .col-xl-pull-1 {
+        right: 8.33333333%;
+    }
+
+    .col-xl-pull-0 {
+        right: auto;
+    }
+
+    .col-xl-push-12 {
+        left: 100%;
+    }
+
+    .col-xl-push-11 {
+        left: 91.66666667%;
+    }
+
+    .col-xl-push-10 {
+        left: 83.33333333%;
+    }
+
+    .col-xl-push-9 {
+        left: 75%;
+    }
+
+    .col-xl-push-8 {
+        left: 66.66666667%;
+    }
+
+    .col-xl-push-7 {
+        left: 58.33333333%;
+    }
+
+    .col-xl-push-6 {
+        left: 50%;
+    }
+
+    .col-xl-push-5 {
+        left: 41.66666667%;
+    }
+
+    .col-xl-push-4 {
+        left: 33.33333333%;
+    }
+
+    .col-xl-push-3 {
+        left: 25%;
+    }
+
+    .col-xl-push-2 {
+        left: 16.66666667%;
+    }
+
+    .col-xl-push-1 {
+        left: 8.33333333%;
+    }
+
+    .col-xl-push-0 {
+        left: auto;
+    }
+
+    .col-xl-offset-12 {
+        margin-left: 100%;
+    }
+
+    .col-xl-offset-11 {
+        margin-left: 91.66666667%;
+    }
+
+    .col-xl-offset-10 {
+        margin-left: 83.33333333%;
+    }
+
+    .col-xl-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-xl-offset-8 {
+        margin-left: 66.66666667%;
+    }
+
+    .col-xl-offset-7 {
+        margin-left: 58.33333333%;
+    }
+
+    .col-xl-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-xl-offset-5 {
+        margin-left: 41.66666667%;
+    }
+
+    .col-xl-offset-4 {
+        margin-left: 33.33333333%;
+    }
+
+    .col-xl-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-xl-offset-2 {
+        margin-left: 16.66666667%;
+    }
+
+    .col-xl-offset-1 {
+        margin-left: 8.33333333%;
+    }
+
+    .col-xl-offset-0 {
+        margin-left: 0;
+    }
+
+    .visible-xl {
+        display: block !important;
+    }
+
+    table.visible-xl {
+        display: table;
+    }
+
+    tr.visible-xl {
+        display: table-row !important;
+    }
+
+    th.visible-xl, td.visible-xl {
+        display: table-cell !important;
+    }
+
+    .visible-xl-block {
+        display: block !important;
+    }
+
+    .visible-xl-inline {
+        display: inline !important;
+    }
+
+    .visible-xl-inline-block {
+        display: inline-block !important;
+    }
+
+    .hidden-xl {
+        display: none !important;
+    }
+}
+
+/* End responsive XL */
+/*navigation*/
+.mainMenu {
+    display: inline-block;
+}
+
+.headGroup .openDays {
+    display: inline-block;
+}
+
+.mainMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainMenu .menu {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.mainMenu .menu a {
+    color: #041e42;
+}
+
+.mainMenu .menu a:hover {
+    text-decoration: none;
+    color: #2dccd3;
+}
+
+.mainMenu .menu li {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.openCol {
+    display: none;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .mainMenu .menu {
+        font-size:12px;
+    }
+
+    .mainMenu {
+        display: block;
+    }
+
+    .mainMenu .menu > li {
+        line-height: 90px;
+    }
+
+    .mainMenu .menu li {
+    }
+
+    .headGroup .openDays {
+        float: right;
+        line-height: 90px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .headerIcon {
+        margin:25px 0;
+        margin: 0;
+    }
+
+    .mainMenu .menu > li {
+        line-height: 110px;
+        padding: 5px 15px;
+    }
+
+    .headGroup .openDays {
+        padding: 5px 0;
+        line-height: 110px;
+    }
+
+    .headerIcon .mainLogo {
+        display: inline-block;
+    }
+
+    .headerIcon .mobIcon {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mainMenu .menu {
+        font-size:14px;
+    }
+}
+
+@media (min-width: 1590px) {
+    .openCol {
+        display:block;
+    }
+}
+
+.headGroup .openDays a {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #c5e86c;
+    color: #041e42;
+    letter-spacing: 0.1em;
+    border: solid 2px #c5e86c;
+    text-align: center;
+    width: 100%;
+}
+
+.headGroup .openDays a:hover {
+    background: #fff;
+    text-decoration: none;
+}
+
+.lang-flags {
+    float: right;
+    padding-top: 53px;
+}
+
+@media(max-width: 1199px) {
+    .lang-flags {
+        padding-top: 45px;
+    }
+}
+
+@media(max-width: 991px) {
+    .lang-flags {
+        padding-top: 0px;
+        display: inline-block;
+        float: none;
+    }
+}
+
+.menuToggle {
+    display: none;
+}
+
+/*menuToggle*/
+@media (max-width: 991px) {
+    .mainMenu {
+        display:block;
+        text-align: right;
+    }
+
+    .menuToggle {
+        display: inline-block;
+        font-size: 30px;
+        color: #041e42;
+        padding: 25px 20px 20px;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .mainMenu .menuWrap {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: #fff;
+        display: block;
+        width: 260px;
+        z-index: 800;
+        padding: 32px 0;
+        text-align: left;
+        border-left: solid 2px #2dccd3;
+    }
+
+    .mainMenu .menuWrap {
+        right: -270px;
+        transition: 300ms;
+    }
+
+    body.menuopen .mainMenu .menuWrap {
+        right: 0px;
+    }
+
+    .mainMenu .menu li {
+        display: block;
+        padding: 0px 0px;
+    }
+
+    .mainMenu .menu li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .mainMenu .menu li a:hover {
+        background: #2dccd3;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/*-------------------
+Header
+------------------*/
+.logo {
+    display: inline-block;
+    line-height: 90px;
+    vertical-align: middle;
+}
+
+.logo img {
+    max-height: 90px;
+}
+
+.logo .mainLogo {
+    display: none;
+    vertical-align: middle
+}
+
+.logo .mobIcon {
+    display: inline-block;
+    vertical-align: middle
+}
+
+@media (min-width: 1200px) {
+    .logo .mainLogo {
+        display:inline-block;
+    }
+
+    .logo .mobIcon {
+        display: none;
+    }
+
+    .logo {
+        line-height: 110px;
+    }
+
+    .logo img {
+        max-height: 110px;
+    }
+}
+
+.homeBanner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.homeBanner .slide {
+    width: 100%;
+}
+
+.homeBanner .slideImage {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.homeBanner .slideImage img {
+    visibility: hidden;
+}
+
+.homeBanner .slideText {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    background: #2dccd3;
+    padding: 10px 0;
+}
+
+.homeBanner .slideText .slideTop {
+    font-size: 30px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.homeBanner .slideText:before {
+    content: "";
+    display: block;
+    display: none;
+    background: rgba(51, 51, 51, 0.6);
+    height: 90%;
+    width: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.8);
+    filter: blur(35px);
+    border-radius: 100%;
+}
+
+@media (min-width: 992px) {
+    .homeBanner .slideText {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: transparent;
+    }
+
+    .homeBanner .slideText:before {
+        display: block
+    }
+}
+
+@media (min-width: 1200px) {
+    .homeBanner .slideText {
+        font-size:24px;
+    }
+
+    .homeBanner .slideText .slideTop {
+        font-size: 40px;
+    }
+
+    .homeBanner .slideText .slideBottom {
+        margin-top: 15px;
+    }
+}
+
+.homeBanner .openDays {
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.homeBanner .openDays a {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 10px 41px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #c5e86c;
+    color: #041e42;
+    letter-spacing: 0.1em;
+    border: solid 2px #c5e86c;
+    min-width: 200px;
+    text-align: center;
+}
+
+.homeBanner .openDays a:hover {
+    background: #fff;
+    text-decoration: none;
+}
+
+.homeBanner .openDays .openCont {
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 5px 0 10px;
+}
+
+@media (min-width: 992px) {
+    .homeBanner .openDays {
+        color:#fff;
+        background: rgba(0,0,0,0.4);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 110;
+        padding: 25px 0;
+        text-align: initial;
+    }
+
+    .homeBanner .openDays .opendayText {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .homeBanner .openDays .opendayText {
+        display: flex;
+        padding: 0;
+    }
+
+    .homeBanner .openDays .opendayText .openCont {
+        flex: 1;
+        padding: 5px 0 0;
+        line-height: 1.5;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1590px) {
+    .homeBanner .openDays .opendayText .openCont {
+        font-size:30px;
+    }
+}
+
+.introText {
+    background: #2dccd3;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.belowText {
+    margin: 20px 0;
+}
+
+.row.columnrow .col-sm-7.col-xl-6.col-xl-offset-1{
+    
+}
+/*Dynamic blocks*/
+.dynamicContent {
+}
+
+/*text block*/
+.textBlock {
+    text-align: center;
+    padding: 30px 0;
+    padding-top: 60px;
+    position: relative;
+}
+
+.textBlock.hasimg {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.textBlock.default {
+    padding: 30px 0;
+}
+
+.textBlock .imageBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+}
+
+.textBlock .textLink {
+    margin: 40px 0 60px;
+}
+
+.textBlock .textLink a {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 10px 41px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #c5e86c;
+    color: #041e42;
+    letter-spacing: 0.1em;
+    border: solid 2px #c5e86c;
+    min-width: 200px;
+    text-align: center;
+}
+
+.textBlock .textLink a:hover {
+    background: #fff;
+    text-decoration: none;
+}
+
+.textBlock.blueBlock {
+    background: #041e42;
+    color: #fff;
+}
+
+.textBlock.blueBlock h1, .textBlock.blueBlock h2, .textBlock.blueBlock h3 {
+    color: #fff;
+}
+
+.textBlock.blueBlock.hasimg h2 {
+    color: #c5e86c;
+}
+
+.textBlock.blueBlock h3 {
+    color: #c5e86c;
+    text-transform: uppercase;
+    margin: 2.3em 0 1em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.textBlock.tealBlock {
+    background: #2dccd3;
+    color: #fff;
+}
+
+.textBlock.tealBlock h1, .textBlock.tealBlock h2, .textBlock.tealBlock h3 {
+    color: #fff;
+}
+
+.textBlock.tealBlock.hasimg h2 {
+    color: #041e42;
+}
+
+.textBlock.pinkBlock {
+    background: #f04e98;
+    color: #fff;
+}
+
+.textBlock.pinkBlock a {
+    color: #fff;
+}
+
+.textBlock.pinkBlock h1, .textBlock.pinkBlock h2, .textBlock.pinkBlock h3 {
+    color: #fff;
+}
+
+.textBlock.pinkBlock .textLink a {
+    background: #2a3b6f;
+    border-color: #2a3b6f;
+    color: #fff;
+}
+
+.textBlock.pinkBlock .textLink a:hover {
+    background: #fff;
+    color: #2a3b6f;
+}
+
+/*default styles*/
+.textBlock.default:before {
+    content: '';
+    display: block;
+    width: 1px;
+    background: #041e42;
+    height: 87px;
+    margin: 15px auto -15px;
+}
+
+.dynamicContent.postCols .textBlock.default {
+    background: #f8f8f8;
+    padding-top: 50px;
+}
+
+.dynamicContent.postCols .textBlock.default:before {
+    display: none;
+}
+
+@media (min-width: 1390px) {
+    .textBlock.hasimg .col-sm-12 {
+        padding-left:120px;
+        padding-right: 120px;
+    }
+}
+
+/* img text block*/
+.ImgtextBlock {
+    position: relative;
+}
+
+.ImgtextBlock .textBlock {
+    padding: 30px;
+    text-align: left;
+}
+
+.ImgtextBlock .textBlock p {
+    letter-spacing: 1px;
+    line-height: 1.66;
+}
+
+.ImgtextBlock .textBlock.blueBlock {
+    background: rgba(4, 30, 66, 0.85);
+}
+
+.ImgtextBlock .textBlock.tealBlock {
+    background: rgba(45, 204, 211, 0.85);
+}
+
+.ImgtextBlock .textBlock.pinkBlock {
+    background: rgba(240, 78, 152, 0.85);
+}
+
+.ImgtextBlock .imageBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1590px) {
+    .ImgtextBlock .textBlock {
+        padding:40px 55px 40px 55px;
+    }
+}
+
+/*columns*/
+.dynamic-two_columns .columnrow .col2 {
+    background: #f8f8f8;
+}
+
+.dynamic-two_columns .columnrow > * {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .dynamic-two_columns .columnrow {
+        display:flex;
+        background: #fff;
+        position: relative;
+    }
+
+    .dynamic-two_columns {
+        position: relative;
+    }
+
+    .dynamic-two_columns:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50%;
+        lefT: 50%;
+        height: 100%;
+        top: 0px;
+        background: #f8f8f8;
+    }
+
+    .dynamic-two_columns .columnrow .col2 {
+        margin-left: 2px;
+    }
+}
+
+@media (min-width: 1390px) {
+    .dynamic-two_columns .columnrow > * {
+        padding-left:40px;
+        padding-right: 40px;
+    }
+}
+
+/*infoBlocks*/
+.infoBlocks .image {
+}
+
+.infoBlocks {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.infoBlocks .infoBlock {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.infoBlocks .infoBlock .images {
+    padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+    .infoBlocks .infoBlock {
+        padding-left:30px;
+        padding-right: 30px;
+    }
+}
+
+/*innerInfoBlocks*/
+.innerInfoBlocks {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 105px;
+}
+
+.innerInfo {
+    line-height: 1.3;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.innerInfoBlocks .image {
+    height: 45px;
+    line-height: 45px;
+}
+
+.innerInfoBlocks .image img {
+    vertical-align: middle;
+}
+
+.innerInfoBlocks img {
+    max-height: 105px;
+}
+
+.innerInfoBlocks strong {
+    display: block;
+}
+
+.innerInfoBlocks span {
+    display: block;
+    font-size: 16px;
+}
+
+/*----------------
+Footer
+------------------*/
+.footer {
+}
+
+.footer .map {
+    background-image: url(images/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.footer .map a {
+    position: absolute;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 10px 41px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #c5e86c;
+    color: #041e42;
+    letter-spacing: 0.1em;
+    border: solid 2px #c5e86c;
+    min-width: 200px;
+    text-align: center;
+    bottom: 135px;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+
+.footer .map a:hover {
+    background: #fff;
+    text-decoration: none;
+}
+
+.footerTop {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: solid 1px #8d9091;
+}
+
+.footerTop p {
+    margin: 10px 0;
+}
+
+.footerBottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.inputs-list {
+    list-style: none;
+}
+
+ul.inputs-list input[type='checkbox'] {
+    margin-right: 10px
+}
