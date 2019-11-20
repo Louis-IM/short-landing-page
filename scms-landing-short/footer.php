@@ -29,7 +29,7 @@ $privpol = get_field('privacy_policy_link','options');
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-10 col-lg-offset-1">
+			<div class="col-lg-10 offset-lg-1">
 				<div class="footerTop">
 					<?php the_field('contact_text','options');?>
 				</div>

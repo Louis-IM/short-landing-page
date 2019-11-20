@@ -26,7 +26,7 @@ global $schoocms_settings_page;
 	
 <div class="row">
 
-		<div class="col-lg-12 bodyContent">
+		<div class="col-lg-12">
 			<!-- breadcrumbs -->	
 			<div class="breadcrumbs">
 				<?php if(function_exists('bcn_display')) {	bcn_display();	} ?>

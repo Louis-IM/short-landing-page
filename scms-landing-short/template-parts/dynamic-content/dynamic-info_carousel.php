@@ -2,14 +2,14 @@
 <div class="container">
 <?php if(get_sub_field('top_text')):?>
 	<div class="row">
-		<div class="col-sm-12 col-lg-10 col-lg-offset-1">
+		<div class="col-sm-12 col-xl-10 offset-xl-1">
 			<?php the_sub_field('top_text');?>
 		</div>
 	</div>
 <?php endif;?>
 <?php if(have_rows('info_blocks')):?>
 	<div class="row">
-		<div class="col-sm-12 col-lg-10 col-lg-offset-1">
+		<div class="col-sm-12 col-xl-10 offset-xl-1">
 			<div class="owl-carousel infoCarousel">
 				<?php while(have_rows('info_blocks')): the_row();
 					$image = get_sub_field('Image');?>
