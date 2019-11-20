@@ -43,14 +43,6 @@
 <!-- End Facebook Pixel Code -->
 
 </head>
-<?php 
-//Set options for langauge
-if(get_bloginfo('language') == 'es'){
-	$options = 'options-es';
-} else {
-	$options = 'options';
-}
-?>
 <body id="body" <?php body_class(); ?>>
 <div class="wrapper">
 	<header>
@@ -67,13 +59,30 @@ if(get_bloginfo('language') == 'es'){
 						</div>
 						<div class="col-xs-4 col-md-6 col-lg-7">
 							<div class="mainMenu">
+								<?php if(have_rows('top_navigation')):?>
 								<div class="menuToggle menu-toggle">
 									<i class="fas fa-bars"></i>
 								</div>
-								<div class="menuWrap"><div class="menuToggle toggleClose menu-toggle"><i class="fas fa-times"></i></div>
-									<?php wp_nav_menu(array('theme_location'=>'main','depth'=>1,'items_wrap'=>'<ul id="%1$s" class="%2$s">%3$s</ul>'));?>
-									<?php if(get_field('header_button_link','options')):
-										$headerlink = get_field('header_button_link','options');?>						
+								<?php endif;?>
+								<div class="menuWrap"><div class="menuToggle toggleClose menu-toggle"><i class="fas fa-times"></i></div>									
+									<?php if(have_rows('top_navigation')):?>
+									<ul class="menu">
+										<?php while(have_rows('top_navigation')): the_row();
+										if(get_sub_field('id')){
+											$dynamicID = '#'.get_sub_field('id');
+										}
+										?>
+										<li>
+											<a href="<?php echo $dynamicID;?>"><?php the_sub_field('text');?></a>
+										</li>
+										<?php endwhile;?>
+									</ul>
+									<?php else:?>
+									<?php //wp_nav_menu(array('theme_location'=>'main','depth'=>1,'items_wrap'=>'<ul id="%1$s" class="%2$s">%3$s</ul>'));?>
+									<?php endif;?>
+									
+									<?php if(get_field('header_button_link')):
+										$headerlink = get_field('header_button_link');?>						
 									<div class="menuopenDays">
 										<a href="<?php echo $headerlink['url'];?>"><?php echo $headerlink['title'];?></a>
 									</div>
@@ -82,8 +91,8 @@ if(get_bloginfo('language') == 'es'){
 							</div>						
 						</div>
 						<div class="col-lg-2 col-md-3 openCol">
-						<?php if(get_field('header_button_link','options')):
-							$headerlink = get_field('header_button_link','options');?>						
+						<?php if(get_field('header_button_link')):
+							$headerlink = get_field('header_button_link');?>						
 								<div class="openDays">
 									<a href="<?php echo $headerlink['url'];?>"><?php echo $headerlink['title'];?></a>
 								</div>
