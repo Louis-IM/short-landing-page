@@ -59,9 +59,11 @@
 						</div>
 						<div class="col-xs-4 col-md-6 col-lg-7">
 							<div class="mainMenu">
+								<?php if(have_rows('top_navigation')):?>
 								<div class="menuToggle menu-toggle">
 									<i class="fas fa-bars"></i>
 								</div>
+								<?php endif;?>
 								<div class="menuWrap"><div class="menuToggle toggleClose menu-toggle"><i class="fas fa-times"></i></div>									
 									<?php if(have_rows('top_navigation')):?>
 									<ul class="menu">
@@ -76,7 +78,7 @@
 										<?php endwhile;?>
 									</ul>
 									<?php else:?>
-									<?php wp_nav_menu(array('theme_location'=>'main','depth'=>1,'items_wrap'=>'<ul id="%1$s" class="%2$s">%3$s</ul>'));?>
+									<?php //wp_nav_menu(array('theme_location'=>'main','depth'=>1,'items_wrap'=>'<ul id="%1$s" class="%2$s">%3$s</ul>'));?>
 									<?php endif;?>
 									
 									<?php if(get_field('header_button_link')):
