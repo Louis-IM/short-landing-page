@@ -57,7 +57,7 @@
 								echo wp_get_attachment_image($logo['id'],'medium');?>
 							</a>
 						</div>
-						<div class="col-4 col-md-6 col-lg-7">
+						<div class="col">
 							<div class="mainMenu">
 								<?php if(have_rows('top_navigation')):?>
 								<div class="menuToggle menu-toggle">
@@ -90,27 +90,17 @@
 							<?php endif;?>
 							</div>						
 						</div>
-						<div class="col-lg-2 col-md-3 openCol">
 						<?php if(get_field('header_button_link')):
-							$headerlink = get_field('header_button_link');?>						
+							$headerlink = get_field('header_button_link');?>
+						<div class="col-lg-2 col-md-3 openCol">												
 								<div class="openDays">
 									<a href="<?php echo $headerlink['url'];?>"><?php echo $headerlink['title'];?></a>
 								</div>
-							<?php endif;?>
-						</div>
-						
+						</div>						
+						<?php endif;?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	</header>
-
-
-
-
-
-
-
-
-	
