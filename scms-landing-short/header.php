@@ -51,13 +51,13 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="topHeadGrp row">
-						<div class="headerIcon col-md-3 col-xl-3 col-xs-8">
+						<div class="headerIcon col-md-6 col-lg-3 col-8">
 							<a href="<?php bloginfo('url');?>" class="logo">
 								<?php $logo = get_field('logo','options');
 								echo wp_get_attachment_image($logo['id'],'medium');?>
 							</a>
 						</div>
-						<div class="col-xs-4 col-md-6 col-lg-7">
+						<div class="col-4 col-md-6 col-lg-7">
 							<div class="mainMenu">
 								<?php if(have_rows('top_navigation')):?>
 								<div class="menuToggle menu-toggle">
