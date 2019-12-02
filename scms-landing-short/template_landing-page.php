@@ -1,4 +1,4 @@
-<?php
+<?php /* Template Name: Landing Page */
 /**
  * The template for displaying all pages
  *
@@ -11,12 +11,10 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header(); 
-
+get_header();
 
 
 ?>
-
 
 
 <?php include('landing-page.php') ?>
