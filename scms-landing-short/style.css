@@ -1236,15 +1236,16 @@ Header
 .testimonialWrap .cycle-pager {
 	font-size: 45px;
     line-height: 5px;
-	color:#d7b10a;
+	color:inherit;
 	margin-top:20px;
 }
 .testimonialWrap .cycle-pager span{
 	margin:0 3px;
 	cursor:pointer;
+	opacity:0.7;
 }
 .testimonialWrap .cycle-pager .cycle-pager-active {
-	color:#9b871a;
+	opacity:1;
 }
 /*----------------
 Footer
