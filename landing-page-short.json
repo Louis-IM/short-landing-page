@@ -530,7 +530,7 @@
                                     "class": "",
                                     "id": ""
                                 },
-                                "message": "<img src=\"http:\/\/stgeor53.vm002.innermedia.co.uk\/ppc\/wp-content\/uploads\/2019\/03\/Poi_1.jpg\" width=\"150\" \/>",
+                                "message": "<img src=\"..\/wp-content\/themes\/scms-landing-short\/images\/Poi_1.jpg\" width=\"150\" \/>",
                                 "new_lines": "wpautop",
                                 "esc_html": 0
                             },
@@ -555,7 +555,7 @@
                                     "class": "",
                                     "id": ""
                                 },
-                                "message": "<img src=\"http:\/\/stgeor53.vm002.innermedia.co.uk\/ppc\/wp-content\/uploads\/2019\/03\/text_2.jpg\" width=\"150\" \/>",
+                                "message": "<img src=\"..\/wp-content\/themes\/scms-landing-short\/images\/text_2.jpg\" width=\"150\" \/>",
                                 "new_lines": "wpautop",
                                 "esc_html": 0
                             },
@@ -686,7 +686,7 @@
                                     "class": "",
                                     "id": ""
                                 },
-                                "message": "<img src=\"http:\/\/stgeor53.vm002.innermedia.co.uk\/ppc\/wp-content\/uploads\/2019\/03\/Poi_2.jpg\" width=\"150\" \/>",
+                                "message": "<img src=\"..\/wp-content\/themes\/scms-landing-short\/images\/Poi_2.jpg\" width=\"150\" \/>",
                                 "new_lines": "wpautop",
                                 "esc_html": 0
                             },
@@ -841,7 +841,7 @@
                                     "class": "",
                                     "id": ""
                                 },
-                                "message": "<img src=\"http:\/\/stgeor53.vm002.innermedia.co.uk\/ppc\/wp-content\/uploads\/2019\/03\/Bodytext_form.jpg\" width=\"150\" height=\"105\">",
+                                "message": "<img src=\"..\/wp-content\/themes\/scms-landing-short\/images\/Bodytext_form.jpg\" width=\"150\" height=\"105\">",
                                 "new_lines": "wpautop",
                                 "esc_html": 0
                             },
