@@ -697,9 +697,7 @@ Header
     opacity: 0.15;
 }
 
-.textBlock.clearBlock .imageBackground {
-    opacity: 1;
-}
+
 
 
 .textBlock .textLink {
@@ -730,17 +728,7 @@ Header
     text-decoration: none;
 	color:#111640;
 }
-.textBlock.style1  .textLink,
-.style1 .linkbutton a{
-	background:#000;
-	border: solid 2px #000;
-}
-.textBlock.style1  .textLink:hover,
-.style1 .linkbutton a:hover{
-	background: #fff;
-    color: #d86018;
-    border: solid 2px #000;
-}
+
 .linkbutton.telephoneLink a {
 	padding:0;
 	overflow:hidden;
@@ -795,27 +783,8 @@ Header
 .dynamicContent.postCols .textBlock.default:before {
     display: none;
 }
-.textBlock.lightgreyBlock {
-	background:#eee;
-}
-.textBlock.style1 {
-	background: #d86018;
-	color:#fff;
-}
-.textBlock.style1 h2,
-.textBlock.style1 h3,
-.textBlock.style1 h4{
-	color:#fff;
-}
-.textBlock.style2 {
-	background: #000;
-	color:#fff;
-}
-.textBlock.style2 h2,
-.textBlock.style2 h3,
-.textBlock.style2 h4{
-	color:#fff;
-}
+
+
 @media (min-width: 1390px) {
     .textBlock.hasimg .col-sm-12 {
         padding-left:120px;
@@ -847,16 +816,9 @@ Header
     background-size: cover;
     background-position: center;
 }
-.ImgtextBlock .textBlock.style1 {
-	background:rgba(216, 96, 24, 0.8)
-}
-.ImgtextBlock .textBlock.style2 {
-	background:rgba(0, 0, 0, 0.80);
-}
-.ImgtextBlock .textBlock.lightgreyBlock{
-	background:rgba(238, 238, 238, 0.8);
-	color:#000;
-}
+
+
+
 @media (min-width: 1590px) {
     .ImgtextBlock .textBlock {
         padding:40px 55px 40px 55px;
@@ -1246,6 +1208,62 @@ Header
 }
 .testimonialWrap .cycle-pager .cycle-pager-active {
 	opacity:1;
+}
+
+/*----------------
+	STYLE TYPES
+------------------*/
+/*Style 1*/
+.textBlock.style1  .textLink,
+.style1 .linkbutton a{
+	background:#000;
+	border: solid 2px #000;
+}
+.textBlock.style1  .textLink:hover,
+.style1 .linkbutton a:hover{
+	background: #fff;
+    color: #d86018;
+    border: solid 2px #000;
+}
+.ImgtextBlock .textBlock.style1 {
+	background:rgba(216, 96, 24, 0.8)
+}
+.textBlock.style1 {
+	background: #d86018;
+	color:#fff;
+}
+.textBlock.style1 h2,
+.textBlock.style1 h3,
+.textBlock.style1 h4{
+	color:#fff;
+}
+
+/*Style 2*/
+.ImgtextBlock .textBlock.style2 {
+	background:rgba(0, 0, 0, 0.80);
+}
+.textBlock.style2 {
+	background: #000;
+	color:#fff;
+}
+.textBlock.style2 h2,
+.textBlock.style2 h3,
+.textBlock.style2 h4{
+	color:#fff;
+}
+
+/*Transparent*/
+.textBlock.clearBlock .imageBackground {
+    opacity: 1;
+}
+
+/*Light Grey 2*/
+.textBlock.lightgreyBlock {
+	background:#eee;
+}
+.ImgtextBlock .textBlock.lightgreyBlock{
+	background:rgba(238, 238, 238, 0.8);
+	color:#000;
 }
 /*----------------
 Footer
