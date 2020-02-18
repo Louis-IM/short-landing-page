@@ -24,7 +24,7 @@ $privpol = get_field('privacy_policy_link','options');
 	}?>>
 	<?php if(get_field('map_link','options')):
 	$map_link = get_field('map_link','options');?>
-		<a href="<?php echo $map_link['url'];?>"><?php echo $map_link['title'];?></a>
+		<a href="<?php echo $map_link['url'];?>" class="readmore"><?php echo $map_link['title'];?></a>
 	<?php endif;?>
 	</div>
 	<div class="container">

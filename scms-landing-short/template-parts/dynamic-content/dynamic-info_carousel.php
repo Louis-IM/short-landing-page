@@ -1,4 +1,5 @@
-<div class="textBlock">
+<?php $style = get_sub_field('style');?>
+<div class="textBlock <?php echo $style;?>">
 <div class="container">
 <?php if(get_sub_field('top_text')):?>
 	<div class="row">

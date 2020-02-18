@@ -41,7 +41,7 @@ if($ratio == '7:5'){
 </div>
 <?php endif;?>
 
-<div class="introText">
+<div class="introText textBlock style2">
 	<div class="container">
 		<div class="row">
 			<div class="<?php echo $col1;?> ">

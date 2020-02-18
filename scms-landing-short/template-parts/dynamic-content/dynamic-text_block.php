@@ -11,7 +11,7 @@ if(get_sub_field('image')){ $image = get_sub_field('image');}?>
 			<?php if(get_sub_field('read_more_link')):
 			$link = get_sub_field('read_more_link');?>
 				<div class="textLink">
-					<a href="<?php echo $link['url'];?>" target="<?php echo $link['target'];?>">
+					<a href="<?php echo $link['url'];?>" target="<?php echo $link['target'];?>" class="readmore">
 						<?php echo $link['title'];?>
 					</a>
 				</div>
