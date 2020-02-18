@@ -40,7 +40,7 @@ if(get_sub_field('custom_id')){
 				</div>
 			<?php endif; ?>
 		</div>
-		<div class="<?php echo $col2;?> col2" id="whyChoose-2">
+		<div class="<?php echo $col2;?> col2 textBlock style1" id="whyChoose-2">
 			<?php the_sub_field('column_two');?>
 		</div>
 	</div>
