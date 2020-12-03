@@ -17,7 +17,9 @@
 						<div class="infoCarImg">
 							<?php echo wp_get_attachment_image($image['id'],'full');?>
 						</div>
+						<?php if(get_sub_field('title')):?>
 						<h3 class="carTitle"><?php the_sub_field('title');?></h3>
+						<?php endif;?>
 						<?php the_sub_field('text');?>
 					</div>		
 				<?php endwhile;?>

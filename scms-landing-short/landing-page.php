@@ -1,4 +1,4 @@
-<?php if(get_field('two_columns')){
+<?php if(get_field('two_columns') && get_field('disable_two_columns') != true){
 	$twocol = get_field('two_columns');
 $ratio = $twocol['column_ratio'];
 if($ratio == '7:5'){
@@ -9,6 +9,8 @@ if($ratio == '7:5'){
 } else {
 	$col1 = 'col-lg-6  col-xl-5 offset-xl-1';
 }
+} else {
+	$col1 = 'col-12 col-xl-10 offset-xl-1';
 }
 ?>
 <?php if(have_rows('banner')):?>
@@ -18,11 +20,23 @@ if($ratio == '7:5'){
 		<?php $banner_slide = get_sub_field('image');?>
 			<div class="slide">
 				<div class="slideImage" style="background-image:url(<?php echo $banner_slide['sizes']['banner']; ?>)">
-					<?php echo wp_get_attachment_image($banner_slide[id],'banner');?>					
+					<?php echo wp_get_attachment_image($banner_slide['id'],'banner');?>					
 				</div>
-				
+				<?php if(get_sub_field('upper_text') || get_sub_field('lower_text') || get_sub_field('link')):?>
+				<div class="slideText">
+					<div class="slideTop"><?php the_sub_field('upper_text');?></div>
+					<div class="slideBottom"><?php the_sub_field('lower_text');?></div>
+					<?php $link = get_sub_field('link');
+					if($link):?>
+					<div class="linkbutton">
+						<a href="<?php echo $link['url'];?>" target="<?php echo $link['target'];?>"><?php echo $link['title'];?></a>
+					</div>
+					<?php endif;?>
+				</div>
+				<?php endif;?>
 			</div>
 		<?php endwhile; ?>
+		<div class="cycle-pager"></div>
 	</div>
 	<?php $opendayInfo = get_field('open_day_info');
 	if($opendayInfo['text'] && $opendayInfo['link']):?>
@@ -40,7 +54,7 @@ if($ratio == '7:5'){
 	<?php endif;?>
 </div>
 <?php endif;?>
-
+<?php if(get_field('intro_text')):?>
 <div class="introText">
 	<div class="container">
 		<div class="row">
@@ -50,13 +64,31 @@ if($ratio == '7:5'){
 		</div>
 	</div>
 </div>
-<?php if(have_rows('two_columns')):
+<?php endif;?>
+<?php if(have_rows('two_columns') && get_field('disable_two_columns') != true):
 	while(have_rows('two_columns')): the_row();?>
 <section class="dynamicContent dynamic-two_columns intro-two" id="whyChoose">
 	<?php get_template_part('template-parts/dynamic-content/dynamic', 'two_columns');?>
 </section>
 <?php endwhile;
 endif;?>
+<?php while ( have_posts() ) :
+				the_post();
+				if ( !empty( get_the_content() ) ):?>
+<main class="main">
+	<div class="textBlock">
+		<div class="container">
+			<div class="row">
+				<div class="col col-xl-10 offset-xl-1">
+					<?php the_content(); ?>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</main>
+<?php endif;
+endwhile;?>
 <?php if( have_rows('landing_page_section') ):
 	$i = 0;
      // loop through the rows of data
