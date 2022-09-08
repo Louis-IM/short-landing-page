@@ -13,10 +13,13 @@ if(get_sub_field('image')){ $image = get_sub_field('image');}?>
 			<div class="col-sm-12">
 				<div class="testimonialWrap">
 					<?php if(have_rows('testimonial')):?>
-						<div class="cycle-slideshow cycle-slideshow-init hiddenNow" data-cycle-log="false" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides=">.slide">
+						<div class="cycle-slideshow cycle-slideshow-init hiddenNow" data-cycle-log="false" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides=">.slide" data-cycle-auto-height="calc">
 						<?php while(have_rows('testimonial')): the_row();?>
 							<div class="slide">
+								<blockquote>
 								<?php the_sub_field('text');?>
+									<?php if(get_sub_field('cite')):?><cite><?php the_sub_field('cite');?></cite><?php endif;?>
+								</blockquote>
 							</div>
 						<?php endwhile;?>
 						<div class="cycle-pager"></div>

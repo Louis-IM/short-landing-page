@@ -80,9 +80,7 @@ add_action( 'widgets_init', 'schoocms_widgets_init' );
  * Enqueue scripts and styles.
  */
 function twentyseventeen_scripts() {
-	wp_enqueue_style( 'main-font', 'https://use.typekit.net/rov4kkj.css' );	
-	wp_enqueue_style( 'lato-font', 'https://fonts.google.com/specimen/Lato?selection.family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' );
-	wp_enqueue_style( 'Trirong-font', 'https://fonts.googleapis.com/css?family=Trirong:300,300i,400,500' );	
+	wp_enqueue_style( 'roboto-font', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap' );
 	
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' , array(), '4.3.1' );
 	wp_enqueue_style( 'owl-style', get_template_directory_uri() . '/css/owl.carousel.min.css' );
@@ -120,10 +118,9 @@ function azrPluginFix() {
 
  
 // Change title for login screen
-add_filter('login_headertitle', create_function(false,"return 'SchooCMS by Innermedia';"));
- 
+add_filter('login_headertext', function(){return 'SchooCMS by Innermedia';});
 // change url for login screen
-add_filter('login_headerurl', create_function(false,"return home_url();"));
+add_filter('login_headerurl', function(){return home_url();});
 
 // disable default dashboard widgets
 function remove_dashboard_widgets() {
@@ -232,12 +229,7 @@ function my_mce_before_init_insert_formats( $init_array ) {
 			'classes' => 'linkbutton',
 			'wrapper' => true
 		),
-		array(  
-			'title' => 'Quick Link',  
-			'block' => 'span',  
-			'classes' => 'quicklink',
-			'wrapper' => true
-		)
+		
 	); 
 	// Insert the array, JSON ENCODED, into 'style_formats'
 	$init_array['style_formats'] = json_encode( $style_formats );  

@@ -20,25 +20,19 @@ jQuery( document ).ready(function($) {
 		$(this).parent('li').toggleClass('open');
 		e.stopPropagation();
 	});
-
-	$('#menu-main li.current-menu-ancestor').addClass('open');
-	$('#menu-main li.menu-item-has-children.current-menu-ancestor').addClass('open');
-	$('#menu-side li.current-menu-ancestor').addClass('open');
-	$('#menu-side li.menu-item-has-children.current-menu-ancestor').addClass('open');
-	$('#menu-side li.menu-item-has-children.current-menu-item').addClass('open');
 	
 	$('#menu-main a').click(function(e){
 		e.stopPropagation();
 	});
 	// end-menu-toggles
 	
-	$('.faq-question').on('click',function(){
-		var faq = $(this).parents('.faq');
-		var faqgroup = $(this).parents('.faqs');
-		$('.faq',faqgroup).not(faq).removeClass('open');
-		$('.faq',faqgroup).not(faq).children('.faq-answer').slideUp();
+	$('.accordion .title').on('click',function(){
+		var faq = $(this).parents('.accordion');
+		var faqgroup = $(this).parents('.accordions');
+		$('.accordion',faqgroup).not(faq).removeClass('open');
+		$('.accordion',faqgroup).not(faq).children('.accordionContent').stop().slideUp();
 		$(faq).toggleClass('open');
-		$(faq).children('.faq-answer').slideToggle();
+		$(faq).children('.accordionContent').stop().slideToggle();
 	});
 	
 	$('.search-toggle').on('click',function(){
@@ -172,4 +166,5 @@ jQuery( document ).ready(function($) {
 			}
 		}
 	});
+	
 });
