@@ -118,10 +118,9 @@ function azrPluginFix() {
 
  
 // Change title for login screen
-add_filter('login_headertitle', create_function(false,"return 'SchooCMS by Innermedia';"));
- 
+add_filter('login_headertext', function(){return 'SchooCMS by Innermedia';});
 // change url for login screen
-add_filter('login_headerurl', create_function(false,"return home_url();"));
+add_filter('login_headerurl', function(){return home_url();});
 
 // disable default dashboard widgets
 function remove_dashboard_widgets() {

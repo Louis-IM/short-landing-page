@@ -1178,7 +1178,7 @@ Header
 	}
 }
 @media (min-width:992px){
-	.linkBlock a .lnkTitle
+	.linkBlock a .lnkTitle {
     	font-size: 20px;
 	}
 }
