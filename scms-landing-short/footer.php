@@ -22,9 +22,13 @@ $privpol = get_field('privacy_policy_link','options');
 		$ftbg = get_field('footer_background_image','options');
 		echo 'style="background-image:url('.$ftbg['url'].');"';
 	}?>>
-	<?php if(get_field('map_link','options')):
-	$map_link = get_field('map_link','options');?>
-		<a href="<?php echo $map_link['url'];?>"><?php echo $map_link['title'];?></a>
+	<?php if(have_rows('map_links','options')):?>
+	<div class="linkWraps"><div class="container">
+		<?php while(have_rows('map_links','options')): the_row();
+		$map_link = get_sub_field('link');?>
+			<a href="<?php echo $map_link['url'];?>"><?php echo $map_link['title'];?></a>
+			<?php endwhile;?>
+		</div></div>
 	<?php endif;?>
 	</div>
 	<div class="container">
