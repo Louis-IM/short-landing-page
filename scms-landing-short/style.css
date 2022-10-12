@@ -15,9 +15,9 @@ html{
 body {
     font-size: 18px;
     font-weight: 300;
-    color: rgb(141, 144, 145);
+    color: rgb(87, 87, 86);
     line-height: 1.55;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto',sans;
 }
 
 .wrapper {
@@ -32,7 +32,7 @@ img {
 }
 
 h1, h2, h3 {
-    color: #00205b;
+    color: #003c6e;
 	font-weight:300;
 }
 
@@ -54,11 +54,11 @@ h3 {
     font-size: 20px;
 }
 a {
-	color:#00205b
+	color:#003c6e
 }
 h4 {
     font-size: 14px;
-    color: #00205b;
+    color: #003c6e;
     margin: 2.3em 0;
 }
 
@@ -116,11 +116,11 @@ table td:last-child {
     line-height: 1.4em;
     padding:10px 25px 10px;
     text-transform: uppercase;
-    background: #00205b;
+    background: #003c6e;
     color: #fff;
-    border: solid 2px #00205b;
+    border: solid 2px #003c6e;
     text-align: center;
-    background: #00205b;
+    background: #003c6e;
     transition: all 300ms;
 	min-width:200px;
 	letter-spacing:0.05em;
@@ -129,7 +129,7 @@ table td:last-child {
 
 .dynamicContent div.wpforms-container-full .wpforms-form button[type=submit]:hover {
     background: #fff;
-	color:#00205b;
+	color:#003c6e;
     border: solid 2px #000;
 }
 
@@ -271,7 +271,7 @@ a img.aligncenter {
 }
 
 .mainMenu .menu a {
-    color: #00205b;
+    color: #003c6e;
     transition: all 300ms;
 }
 
@@ -352,20 +352,20 @@ a img.aligncenter {
     padding: 5px 20px 5px;
     font-size: 16px;
     text-transform: uppercase;
-    background: #00205b;
+    background: #003c6e;
     color: #fff;
-    border: solid 2px #00205b;
+    border: solid 2px #003c6e;
     text-align: center;
     width: 100%;
-    background: #00205b;
+    background: #003c6e;
     transition: all 300ms;
 	letter-spacing:0.05em;
 }
 
 .headGroup .openDays a:hover {
     background: #fff;
-    border-color: #00205b;
-    color: #00205b;
+    border-color: #003c6e;
+    color: #003c6e;
     text-decoration: none;
 }
 
@@ -410,7 +410,7 @@ a img.aligncenter {
     .menuToggle {
         display: inline-block;
         font-size: 30px;
-        color: #00205b;
+        color: #003c6e;
         padding: 10px 10px 0 10px;
         text-align: right;
         cursor: pointer;
@@ -527,7 +527,7 @@ Header
     text-align: center;
     font-size: 18px;
     font-weight: 500;
-    background: #00205b;
+    background: #003c6e;
     padding: 10px;
 	position:absolute;
      width: 100%;   
@@ -560,9 +560,9 @@ Header
     padding: 10px 41px;
     font-size: 1em;
     text-transform: uppercase;
-    background: #00205b;
+    background: #003c6e;
     color: #fff;
-    border: solid 2px #00205b;
+    border: solid 2px #003c6e;
     min-width: 200px;
     text-align: center;
 	letter-spacing:0.05em;
@@ -570,7 +570,7 @@ Header
 
 .homeBanner .openDays a:hover {
     background: #fff;
-	color:#00205b;
+	color:#003c6e;
     text-decoration: none;
 }
 
@@ -714,11 +714,11 @@ Header
     line-height: 1.4em;
     padding: 10px 25px 10px;
     text-transform: uppercase;
-    background: #00205b;
+    background: #003c6e;
     color: #fff;
-    border: solid 2px #00205b;
+    border: solid 2px #003c6e;
     text-align: center;
-    background: #00205b;
+    background: #003c6e;
     transition: all 300ms;
 	letter-spacing:0.05em;
 }
@@ -771,7 +771,7 @@ Header
     content: '';
     display: block;
     width: 1px;
-    background: #00205b;
+    background: #003c6e;
     height: 87px;
     margin: 15px auto 0px;
 }
@@ -827,10 +827,56 @@ Header
         padding:40px 55px 40px 55px;
     }
 }
-
+.ImgtextBlock.solidImgBlock.style1{
+	background: #003c6e;
+	color:#fff;
+}
+.ImgtextBlock.solidImgBlock.style1 .textBlock {
+	background: #003c6e;
+}
+.ImgtextBlock.solidImgBlock.textBlock.style2 {
+	background: #602167;
+	color:#fff;
+}
+.ImgtextBlock.solidImgBlock.style2 .textBlock {
+	background: #602167;
+}
+.ImgtextBlock.solidImgBlock .container {
+	position:relative;
+}
+.ImgtextBlock.solidImgBlock .twocol-bg {
+    position: relative;
+    height: 200px;
+}
+.ImgtextBlock.solidImgBlock .twocol-bg img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+@media (min-width: 768px) {
+    .ImgtextBlock.solidImgBlock .twocol-bg {
+        position:absolute;
+        left: 0;
+        right: 40%;
+        top: 0;
+        bottom: 0;
+        height: auto;
+    }
+	.ImgtextBlock.solidImgBlock.leftTxt .twocol-bg {
+        position:absolute;
+        right: 0;
+        left: 40%;
+        top: 0;
+        bottom: 0;
+        height: auto;
+    }
+}
 /*columns*/
 .dynamic-two_columns .columnrow .col2 {
-    background: #00205b;
+    background: #003c6e;
 	color:#fff;
     z-index: 2;
 	padding-bottom:5px;
@@ -1095,7 +1141,7 @@ Header
 	position:absolute;
 	width:20px;
 	height:2px;
-	background:#00205b;
+	background:#003c6e;
 	top:0;
 	left:50%;
 	margin-left:-10px;
@@ -1160,17 +1206,17 @@ Header
     padding: 10px 20px;
     font-size: 16px;
     text-transform: uppercase;
-    background: #00205b;
+    background: #003c6e;
     color: #fff;
-    border: solid 2px #00205b;
+    border: solid 2px #003c6e;
     text-align: center;
     width: 100%;
-    background: #00205b;
+    background: #003c6e;
     transition: all 300ms;
 }
 .linkBlock  a:hover .lnkTitle{
 	background:#fff;
-	color:#00205b;
+	color:#003c6e;
 }
 @media (min-width:768px){
 	.linkBlock  a:before{
@@ -1256,7 +1302,7 @@ Header
 	display:inline-block;
 }
 .blockGalleryItem a:hover{
-	border-color:#00205b;
+	border-color:#003c6e;
 }
 .imgBlockCar {
 	position:relative;
@@ -1305,27 +1351,33 @@ Footer
     background-size: cover;
 	margin-bottom:20px;
 }
-
-.footer .map a {
-    position: absolute;
+.footer .map .linkWraps {
+	position: absolute;
+    bottom: 135px;
+    left: 0%;
+	width:100%;
+}
+.footer .map .linkWraps .container{
+	display:flex;
+    justify-content: space-around;
+}
+.footer .map a {    
     display: inline-block;
     line-height: 1.5em;
     padding: 10px 41px;
     font-size: 12px;
     text-transform: uppercase;
-    background: #00205b;
+    background: #003c6e;
     color: #fff;
-    border: solid 2px #00205b;
+    border: solid 2px #003c6e;
     min-width: 200px;
+	margin:10px 5px;
     text-align: center;
-    bottom: 135px;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%);
 }
 
 .footer .map a:hover {
     background: #fff;
-	color:#00205b;
+	color:#003c6e;
     text-decoration: none;
 }
 
@@ -1339,7 +1391,7 @@ Footer
 
 .footerTop a,
 .footerTop span {
-    color: #00205b;
+    color: #003c6e;
 }
 
 .footerTop p {
@@ -1355,7 +1407,7 @@ Footer
 
 .footerBottom a,
 .footerBottom span {
-    color: #00205b;
+    color: #003c6e;
 }
 
 ul.inputs-list {
@@ -1369,7 +1421,7 @@ ul.inputs-list input[type='checkbox'] {
 /*Accordions*/
 .accordion {
 	margin-bottom:10px;
-	border-bottom:solid 1px #00205b;
+	border-bottom:solid 1px #003c6e;
 }
 .accordion.open {
 	border-bottom-color:#ccc;
@@ -1377,7 +1429,7 @@ ul.inputs-list input[type='checkbox'] {
 .accordion .title {
 	position:relative;
 	cursor:pointer;
-	background:#00205b;
+	background:#003c6e;
 	color:#fff;
 	margin:0;
 	padding:0.5em 10px;
@@ -1408,7 +1460,7 @@ ul.inputs-list input[type='checkbox'] {
 
 /*Style 1*/
 .textBlock.style1 {
-	background: #00205b;
+	background: #003c6e;
 	color:#fff;
 }
 
@@ -1429,7 +1481,7 @@ ul.inputs-list input[type='checkbox'] {
 .dynamic-two_columns .columnrow .col2 div.wpforms-container-full .wpforms-form button[type=submit],
 .textBlock.style1 .submitButton  {
 	border:solid 2px #fff;
-	background:#00205b;
+	background:#003c6e;
 }
 .textBlock.style1 a.readmore:hover,
 .textBlock.style1 .linkbutton a:hover,
@@ -1437,8 +1489,8 @@ ul.inputs-list input[type='checkbox'] {
 .dynamic-two_columns .columnrow .col2 div.wpforms-container-full .wpforms-form button[type=submit]:hover,
 .textBlock.style1 .submitButton:hover  {
 	background: #fff;
-    color: #00205b;
-    border: solid 2px #00205b;
+    color: #003c6e;
+    border: solid 2px #003c6e;
 }
 /*Style 2*/
 .textBlock.style2 {
@@ -1457,7 +1509,7 @@ ul.inputs-list input[type='checkbox'] {
 	background:rgba(96, 33, 103, 0.8);
 }
 .style2 .linkbutton a:hover {
-	color:#00205b;
+	color:#003c6e;
 }
 /*Transparent*/
 .textBlock.clearBlock .imageBackground {
@@ -1481,7 +1533,7 @@ ul.inputs-list input[type='checkbox'] {
 	color:#000;
 }
 #subject-tiles .subject-block .subject-close {
-	background:#00205b;
+	background:#003c6e;
 }
 .subject-tile.subjectOpen .cover .button-wrap {
 	background:#602167;
